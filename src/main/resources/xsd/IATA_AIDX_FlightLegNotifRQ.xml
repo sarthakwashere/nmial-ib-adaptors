@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IATA_AIDX_FlightLegNotifRQ xmlns="http://www.iata.org/IATA/2007/00"
+                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xsi:schemaLocation="http://www.iata.org/IATA/2007/00 IATA_AIDX_FlightLegNotifRQ.xsd"
+                            EchoToken="ET12345"
+                            TimeStamp="2024-09-17T10:00:00Z"
+                            Target="Test"
+                            Version="2.006"
+                            TransactionIdentifier="TX123456789"
+                            SequenceNmbr="1">
+    <Originator Code="ABC" CodeContext="IATA"/>
+    <DeliveringSystem Code="XYZ" CodeContext="IATA"/>
+
+    <FlightLeg>
+        <LegIdentifier>
+            <Airline>ABC</Airline>
+            <FlightNumber>1234</FlightNumber>
+            <DepartureAirport>ASD</DepartureAirport>
+            <ArrivalAirport>SDQ</ArrivalAirport>
+            <OriginDate>2019-01-02</OriginDate>
+        </LegIdentifier>
+        <SpecialAction>LockDown</SpecialAction>
+        <LegData>
+            <OperationalStatus>DE</OperationalStatus>
+            <PublicStatus>DE</PublicStatus>
+            <OperatingAlliance>ST</OperatingAlliance>
+            <ServiceType>S</ServiceType>
+            <TechnicalStopInd>true</TechnicalStopInd>
+        </LegData>
+    </FlightLeg>
+
+    <FlightLeg>
+        <LegIdentifier>
+            <Airline>ABC</Airline>
+            <FlightNumber>5678</FlightNumber>
+            <DepartureAirport>SDQ</DepartureAirport>
+            <ArrivalAirport>SDD</ArrivalAirport>
+            <OriginDate>2019-01-02</OriginDate>
+
+        </LegIdentifier>
+        <SpecialAction>Delete</SpecialAction>
+        <LegData>
+            <OperationalStatus>XY</OperationalStatus>
+            <PublicStatus>XY</PublicStatus>
+            <OperatingAlliance>ST</OperatingAlliance>
+            <ServiceType>C</ServiceType>
+            <TechnicalStopInd>false</TechnicalStopInd>
+        </LegData>
+    </FlightLeg>
+</IATA_AIDX_FlightLegNotifRQ>

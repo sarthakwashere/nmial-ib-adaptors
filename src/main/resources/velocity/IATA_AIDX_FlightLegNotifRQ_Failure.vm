@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IATA_AIDX_FlightLegNotigRQ CodeContext="3"
+                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                       TimeStamp="2024-07-08T19:56:09Z"
+                       Target="Test"
+                       Version="21.3"
+                       TransactionIdentifier="173821471afdsaf1321"
+                       TransactionStatusCode="Start"
+                       SequenceNmbr="1323"
+                       xsi:schemaLocation="http://www.iata.org/IATA/2007/00 IATA_AIDX_FlightLegRS.xsd"
+                       xmlns="http://www.iata.org/IATA/2007/00">
+    <Errors>
+        <Error>Request is invalid</Error>
+    </Errors>
+</IATA_AIDX_FlightLegNotigRQ>
